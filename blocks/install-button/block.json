@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lh-web-application/install-button",
+	"title": "Install the App",
+	"description": "A button that opens the install sheet, so people can add this site to their home screen as an app.",
+	"category": "widgets",
+	"icon": "smartphone",
+	"keywords": [ "install", "app", "home screen", "pwa" ],
+	"textdomain": "lh-web-application",
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": ""
+		},
+		"trigger": {
+			"type": "string",
+			"default": "block"
+		},
+		"hideWhenInstalled": {
+			"type": "boolean",
+			"default": true
+		},
+		"textAlign": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": { "margin": true }
+	},
+	"editorScript": "file:./editor.js",
+	"style": "file:./style.css"
+}

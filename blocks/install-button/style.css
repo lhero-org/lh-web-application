@@ -1,0 +1,19 @@
+/* LH Web Application: Install the App block. The button takes the theme's button styles. */
+
+/* Never inside the installed app, where it cannot do anything. */
+.lh_web_application-is_standalone .wp-block-lh-web-application-install-button,
+.lh_web_application-is_installed .wp-block-lh-web-application-install-button.is-hidden-when-installed {
+	display: none;
+}
+
+@media (display-mode: standalone), (display-mode: fullscreen), (display-mode: minimal-ui) {
+	.wp-block-lh-web-application-install-button {
+		display: none;
+	}
+}
+
+@media print {
+	.wp-block-lh-web-application-install-button {
+		display: none;
+	}
+}
